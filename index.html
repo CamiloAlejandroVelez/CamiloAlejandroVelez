@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recursos Web</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Antique+Soft&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!--Navegador-->
+  <header class="cd-auto-hide-header">
+    <div class="logo"><a href="#0"><img src="img/logo.png" alt="Logo"></a></div>
+  
+    <nav class="cd-primary-nav">
+      <a href="#cd-navigation" class="nav-trigger">
+        <span>
+          <em aria-hidden="true"></em>
+          Menu
+        </span>
+      </a> <!-- .nav-trigger -->
+  
+      <ul id="cd-navigation">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="videos.html">Videos</a></li>
+        <li><a href="servicios.html">Servicio</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="galeria.html">Galeria</a></li>
+      </ul>
+    </nav> <!-- .cd-primary-nav -->
+  </header> <!-- .cd-auto-hide-header -->
+
+  <div class="arcane">
+    <H1>ARCANE</H1>
+  </div>
+
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="img/img_main3.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="img/img_main1.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="img/img_main2.jpg" alt=""></div>
+          
+          
+    </div>
+
+    
+
+    <!--JavaScript-->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        coverflowEffect: {
+          rotate: 50,
+          stretch: 0,
+          depth: 100,
+          modifier: 1,
+          slideShadows: true,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+        },
+      });
+    </script>
+    
+    <!--Fin slider-->
+
+   
+
+    <!-- .cd-main-content -->
+	
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+<script>
+	if( !window.jQuery ) document.write('<script src="js/jquery-3.0.0.min.js"><\/script>');
+</script>
+<script src="js/main.js"></script> <!-- Resource jQuery -->
+
+
+
+ <!--footer-->
+ <div class="footer">
+  <p>@2021 Riot Games, Inc. ARCANE LEAGUE OF LEGENDS y cualquier logotipo asociado son <br>
+  marcas registradas, marcas de servicio o marcas comerciales de Riot Games, Inc.</p>
+
+  <div class="copy">
+    <li><a href="#">Política de Privacidad</a></li>
+    <li><a href="#">Términos de Uso</a></li>
+  </div>
+</div>
+
+
+
+
+
+</body>
+</html>

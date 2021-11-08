@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recursos Web</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/nav.css">
+</head>
+<body>
+
+  <!--Navegador-->
+  <header class="cd-auto-hide-header">
+    <div class="logo"><a href="#0"><img src="img/logo.png" alt="Logo"></a></div>
+  
+    <nav class="cd-primary-nav">
+      <a href="#cd-navigation" class="nav-trigger">
+        <span>
+          <em aria-hidden="true"></em>
+          Menu
+        </span>
+      </a> <!-- .nav-trigger -->
+  
+      <ul id="cd-navigation">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="videos.html">Videos</a></li>
+        <li><a href="servicios.html">Servicio</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="galeria.html">Galeria</a></li>
+      </ul>
+    </nav> <!-- .cd-primary-nav -->
+  </header> <!-- .cd-auto-hide-header -->
+
+  <div class="arcane">
+    <H1>ARCANE</H1>
+  </div>
+
+ <!--Video-->
+ <div class="video">
+  <iframe width="860" height="515" src="https://www.youtube.com/embed/0qSarZpylxs" 
+  title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+   encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+ </div>
+ 
+
+    <!--JavaScript-->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        coverflowEffect: {
+          rotate: 50,
+          stretch: 0,
+          depth: 100,
+          modifier: 1,
+          slideShadows: true,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+        },
+      });
+    </script>
+    
+
+    <!-- .cd-main-content -->
+	
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+<script>
+	if( !window.jQuery ) document.write('<script src="js/jquery-3.0.0.min.js"><\/script>');
+</script>
+<script src="js/main.js"></script> <!-- Resource jQuery -->
+
+<div class="footer2">
+  <h1>Una casa dividida</h1>
+  <br>
+  <br>
+  <p>Dos hermanas. Dos ciudades. Un descubrimiento que cambiará el mundo para <br> siempre.
+     En las ciudades de Piltóver y Zaun, el descontento se asoma mientras<br> que entre inventores
+      y ladrones, políticos y criminales crece el hartazgo ante<br> las restricciones de una sociedad fracturada.</p>
+</div>
+
+</body>
+</html>
